@@ -1,4 +1,3 @@
-
 data = [
     ["Sunny", "Hot", "High", "Weak", "No"],
     ["Sunny", "Hot", "High", "Strong", "No"],
@@ -7,9 +6,7 @@ data = [
     ["Rain", "Cool", "Normal", "Weak", "Yes"],
     ["Rain", "Cool", "Normal", "Strong", "No"]
 ]
-
 print("Decision Tree")
-
 print("Outlook?")
 print("|")
 print("|-- Overcast --> Play Tennis = Yes")
@@ -21,14 +18,11 @@ print("|")
 print("|-- Rain --> Wind?")
 print("       |-- Weak --> Yes")
 print("       |-- Strong --> No")
-
 outlook = "Sunny"
 humidity = "Normal"
-
 print("\nNew Sample:")
 print("Outlook =", outlook)
 print("Humidity =", humidity)
-
 if outlook == "Overcast":
     result = "Yes"
 elif outlook == "Sunny":
@@ -38,5 +32,4 @@ elif outlook == "Sunny":
         result = "Yes"
 else:
     result = "Yes"
-
 print("\nPrediction:", result)
